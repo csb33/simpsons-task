@@ -9,7 +9,7 @@ class Characters extends Component {
     const { characters, onDelete, onLikeToggle } = this.props;
 
     //// PROP DRILLING
-    //// .map renders data in the data in the DOM
+    //// .map renders data in the DOM
     return characters.map((character, index) => (
       <Character
         key={character.quote + index} //// each child must have a unique key
