@@ -39,7 +39,7 @@ class Character extends Component {
             <button
               className={liked ? "liked" : "notLiked"}
               onClick={this.onClick}>
-              {liked ? "Unlike" : "Like"}
+              {liked ? "Liked" : "Like"}
             </button>
             <div>
               <button onClick={() => this.props.onDelete(quote)}>Delete</button>
@@ -64,7 +64,7 @@ class Character extends Component {
           <button
             className={liked ? "liked" : "notLiked"}
             onClick={this.onClick}>
-            {liked ? "Unlike" : "Like"}
+            {liked ? "Liked" : "Like"}
           </button>
           <div>
             <button onClick={() => this.props.onDelete(quote)}>Delete</button>

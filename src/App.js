@@ -6,7 +6,7 @@ import "./App.css";
 import Blob from "./blob.png";
 
 class App extends Component {
-  ////MUST HAVE STATE AS LEARNING ALL INITIAL INFO
+  ////MUST HAVE STATE AS LEARNING ALL INITIAL INF
   state = { screenMode: 0 };
 
   //// API data

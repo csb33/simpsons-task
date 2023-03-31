@@ -25,8 +25,8 @@
   margin: 10px;
   justify-content: space-between;
   align-items: center;
-  max-width: 30vw;
-  min-width: 20vw;
+  max-width: 300px;
+  min-width: 250px;
   padding: 1rem;
   border-radius: 0.75rem;
   box-shadow: 5px 10px 8px #888888;
@@ -34,15 +34,11 @@
 
 /* HEADER SECTION  */
 /* Tital */
-h1 {
+.title {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: hotpink; */
-  transform: rotate(-8deg);
-  font-kerning: none;
-  margin-top: 2rem;
-  padding: 2rem;
 }
 
 /* Container for below */
@@ -51,18 +47,21 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
-  width: 80vw;
+  margin: 2rem;
+  width: 95vw;
+  height: 25vh;
 }
-/* ADD NEW CHARACTER/SEARCH/TOTAL LIKES 
-ALL WITH SAME CLASS NAME TO AVIOD MULTIPLE CLASSES
+/* SEARCH/TOTAL LIKES 
+SAME CLASS NAME TO AVIOD MULTIPLE CLASSES
 WITH SAME STYLING  */
-.characterCreateNewSearchLikes {
+.searchLikes {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  min-width: 50vw;
+}
+h2 {
+  margin: 0;
 }
 
 /* IMAGES */
@@ -121,4 +120,36 @@ inc add new character  */
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Hide rotate screen message  */
+.rotateScreen {
+  display: none;
+}
+
+/* MEDIA Qs */
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .characterContainer,
+  .header {
+    display: none;
+  }
+  .rotateScreen {
+    display: block;
+    margin: 1rem;
+  }
+
+  body {
+    background: linear-gradient(
+      90deg,
+      rgba(246, 208, 54, 1) 0%,
+      rgba(89, 205, 250, 1) 100%
+    );
+  }
 }
